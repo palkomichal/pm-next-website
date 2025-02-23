@@ -3,17 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PM Next</title>
+    <title>NextGen Mobile Apps - Innovating the Future of Mobile Development</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #000000, #5c5b5b, #b2b2b2);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Animation for fade-in */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Portfolio Section */
+        .portfolio {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        .portfolio-item {
+            width: 300px;
+            text-align: center;
+            margin: 20px;
+            border-radius: 10px;
+            padding: 16px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .portfolio-item img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 20px;
+            border-bottom: 3px solid #ffffff;
+        }
+
+        .portfolio-item p {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #333;
+            border-radius: 20px;
+            padding: 20px 0;
+        }
+
+        .portfolio-item a {
+            display: inline-block;
+            margin-top: 10px;
+            background-color: #3b33d8;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .portfolio-item a:hover {
+            background-color: #3b33d8;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .portfolio {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        h2 {
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to PM Next</h1>
-    <p>This is the main page of our MVP website.</p>
-    <nav>
-        <ul>
-            <li><a href="terms.html">Terms and Conditions</a></li>
-            <li><a href="privacy.html">Privacy Policy</a></li>
-            <li><a href="eula.html">EULA</a></li>
-        </ul>
-    </nav>
+
+<!-- Header Section -->
+<header>
+    <h1>PM-NEXT s.r.o</h1>
+    <h2>Next Level Mobile Apps</h2>
+    <p>We are revolutionizing the mobile development landscape with next-generation apps. Our focus is on innovation, scalability, and user-centric design to create apps that push the boundaries of what's possible.</p>
+</header>
+
+<!-- Portfolio Section -->
+ <h2>Apps portfolio</h2>
+<section class="portfolio">
+    <div class="portfolio-item">
+        <img src="images/fnIcon.png" alt="App 1">
+        <h2>FinNext</h2>
+        <p>AI generated stock market reports</p>
+        <a href="finnextApp.html">Learn More</a>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer>
+    <a href="terms.html">Terms and Conditions</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="eula.html">EULA</a>
+</footer>
+
 </body>
 </html>
